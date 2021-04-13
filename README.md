@@ -1,5 +1,12 @@
 http://thewonderfulcompany.github.io/sam.wpa.wonderful.net
 
 
-npm run deploy
+Deploy React Code to Github Pages
+`npm run deploy`
 
+Test React Code Locally
+`npm start`
+
+Deploy AWS SAM changes
+`cd aws/wpa-wonderful-net`
+`sam build; sam deploy`
