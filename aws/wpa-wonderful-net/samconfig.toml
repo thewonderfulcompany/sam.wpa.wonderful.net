@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "wpa-wonderful-net"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-gpwsti6zn4af"
+s3_prefix = "wpa-wonderful-net"
+region = "us-west-2"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
