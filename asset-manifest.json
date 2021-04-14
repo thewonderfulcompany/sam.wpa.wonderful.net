@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/sam.wpa.wonderful.net/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/sam.wpa.wonderful.net/static/js/main.f6f18d60.chunk.js",
-    "main.js.map": "/sam.wpa.wonderful.net/static/js/main.f6f18d60.chunk.js.map",
-    "runtime-main.js": "/sam.wpa.wonderful.net/static/js/runtime-main.b4bb1d43.js",
-    "runtime-main.js.map": "/sam.wpa.wonderful.net/static/js/runtime-main.b4bb1d43.js.map",
-    "static/js/2.d1d5f571.chunk.js": "/sam.wpa.wonderful.net/static/js/2.d1d5f571.chunk.js",
-    "static/js/2.d1d5f571.chunk.js.map": "/sam.wpa.wonderful.net/static/js/2.d1d5f571.chunk.js.map",
-    "static/js/3.65d0df40.chunk.js": "/sam.wpa.wonderful.net/static/js/3.65d0df40.chunk.js",
-    "static/js/3.65d0df40.chunk.js.map": "/sam.wpa.wonderful.net/static/js/3.65d0df40.chunk.js.map",
+    "main.css": "/sam.wpa.wonderful.net/static/css/main.6465d992.chunk.css",
+    "main.js": "/sam.wpa.wonderful.net/static/js/main.4f15b706.chunk.js",
+    "main.js.map": "/sam.wpa.wonderful.net/static/js/main.4f15b706.chunk.js.map",
+    "runtime-main.js": "/sam.wpa.wonderful.net/static/js/runtime-main.653d5432.js",
+    "runtime-main.js.map": "/sam.wpa.wonderful.net/static/js/runtime-main.653d5432.js.map",
+    "static/js/2.bf233eb6.chunk.js": "/sam.wpa.wonderful.net/static/js/2.bf233eb6.chunk.js",
+    "static/js/2.bf233eb6.chunk.js.map": "/sam.wpa.wonderful.net/static/js/2.bf233eb6.chunk.js.map",
+    "static/js/3.2111353e.chunk.js": "/sam.wpa.wonderful.net/static/js/3.2111353e.chunk.js",
+    "static/js/3.2111353e.chunk.js.map": "/sam.wpa.wonderful.net/static/js/3.2111353e.chunk.js.map",
     "index.html": "/sam.wpa.wonderful.net/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/sam.wpa.wonderful.net/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.d1d5f571.chunk.js.LICENSE.txt": "/sam.wpa.wonderful.net/static/js/2.d1d5f571.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/sam.wpa.wonderful.net/static/media/logo.6ce24c58.svg"
+    "static/css/main.6465d992.chunk.css.map": "/sam.wpa.wonderful.net/static/css/main.6465d992.chunk.css.map",
+    "static/js/2.bf233eb6.chunk.js.LICENSE.txt": "/sam.wpa.wonderful.net/static/js/2.bf233eb6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b4bb1d43.js",
-    "static/js/2.d1d5f571.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.f6f18d60.chunk.js"
+    "static/js/runtime-main.653d5432.js",
+    "static/js/2.bf233eb6.chunk.js",
+    "static/css/main.6465d992.chunk.css",
+    "static/js/main.4f15b706.chunk.js"
   ]
 }
