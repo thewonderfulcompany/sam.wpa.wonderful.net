@@ -9,6 +9,10 @@ Description: >
 Globals:
   Function:
     Timeout: 3
+  Api:
+    Cors:
+      AllowOrigin: "'*'"
+
 
 Resources:
   getLinksFunction:
@@ -23,6 +27,20 @@ Resources:
           Properties:
             Path: /getLinks
             Method: get
+
+      # Give DynamoDB Full Access to your Lambda Function
+      # https://aws.amazon.com/premiumsupport/knowledge-center/lambda-sam-template-permissions/
+      Policies:
+        - AmazonDynamoDBFullAccess
+
+
+
+
+
+
+
+
+
 
   getNavCardsFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
@@ -39,21 +57,29 @@ Resources:
         
   
   
-  DynamoDBTable:
-    Type: AWS::DynamoDB::Table
-    Properties: 
-      AttributeDefinitions: 
-        - AttributeName: id
-          AttributeType: S
-      KeySchema: 
-        - AttributeName: id
-          KeyType: HASH
-      ProvisionedThroughput: 
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 5
+  # DynamoDBTable:
+  #   Type: AWS::DynamoDB::Table
+  #   Properties: 
+  #     AttributeDefinitions: 
+  #       - AttributeName: id
+  #         AttributeType: S
+  #     KeySchema: 
+  #       - AttributeName: id
+  #         KeyType: HASH
+  #     ProvisionedThroughput: 
+  #       ReadCapacityUnits: 5
+  #       WriteCapacityUnits: 5
 
 
 
+  # https://egghead.io/lessons/aws-deploy-a-new-dynamodb-table-to-aws-using-aws-sam-template
+  Resources:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey: 
+        Name: id
+        Type: String
+      TableName: Resources
 
 
 Outputs:

@@ -10,3 +10,7 @@ Test React Code Locally
 Deploy AWS SAM changes
 `cd aws/wpa-wonderful-net`
 `sam build; sam deploy`
+
+
+Test SAM locally
+`sam local start-api -p 3001`

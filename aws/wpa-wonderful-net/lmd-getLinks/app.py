@@ -1,4 +1,5 @@
 import json
+import boto3
 
 # import requests
 
@@ -33,10 +34,27 @@ def lambda_handler(event, context):
 
     #     raise e
 
+
+
+    client = boto3.resource('dynamodb')
+    table = client.Table('Resources')
+    resources = table.scan()
+
+    print(resources)
+
     return {
         "statusCode": 200,
+        "headers": {
+            "Access-Control-Allow-Headers": 
+                "Content-Type,Authorization,X-Amz-Date,X-Api-Key,X-Amz-Security-Token",
+            "Access-Control-Allow-Methods": 
+                "DELETE,GET,HEAD,OPTIONS,PATCH,POST,PUT",
+            "Access-Control-Allow-Origin": 
+                "*"
+        },
         "body": json.dumps({
-            "message": "hello world",
+            "hmm": resources['Items'],
             # "location": ip.text.replace("\n", "")
-        }),
+        },
+        ),
     }
